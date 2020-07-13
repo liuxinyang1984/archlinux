@@ -17,7 +17,8 @@ set $mod Mod4
 #设置标题栏字体
 #
 
-font pango:Source Han Serif CN Bold ,Awesome 10 
+font pango:MI Lan Pro VF Medium,Awesome 10 
+#font pango:Source Han Serif CN Bold ,Awesome 10 
 #font pango:Source Han Serif Regular,Awesome 12 
 #设置壁纸
 exec_always --no-startup-id feh --randomize --bg-scale ~/picture/*
@@ -41,8 +42,8 @@ exec --no-startup-id fcitx -d -r --enable sogou-qimpanel&
 
 
 #设置窗口间距
-gaps inner 10
-#gaps inner 20 
+gaps inner 10	#窗口margin
+gaps outer -5 	#桌面Padding
 
 #测试窗口边框
 for_window [class="^.*"] border pixel 4
@@ -127,6 +128,7 @@ bindsym $mod+e layout toggle split
 #切换浮动/平铺模式
 bindsym $mod+Shift+space floating toggle
 
+for_window [class="wechat.exe"] floating enable
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -166,6 +168,16 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+
+#循环工作区
+workspace_auto_back_and_forth yes
+
+
+#绑定下一个或者上一个工作区按键
+bindsym $mod+Ctrl+j workspace next
+bindsym $mod+Ctrl+k	workspace prev
+bindsym $mod+Tab	workspace next
+bindsym $mod+Shift+Tab workspace preV
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
