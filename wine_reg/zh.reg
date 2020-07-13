@@ -1,0 +1,14 @@
+REGEDIT4
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
+"Lucida Sans Unicode"="SourceSansPro-Regular.otf"
+"Microsoft Sans Serif"="SourceSansPro-Regular.otf"
+"Microsoft YaHei"="SourceSansPro-Regular.otf"
+"微软雅黑"="SourceSansPro-Regular.otf"
+"MS Sans Serif"="SourceSansPro-Regular.otf"
+"Tahoma"="SourceSansPro-Regular.otf" 
+"Tahoma Bold"="SourceSansPro-Regular.otf"
+"SimSun"="SourceSansPro-Regular.otf"
+"Arial"="SourceSansPro-Regular.otf"
+"Arial Black"="SourceSansPro-Regular.otf"
+"宋体"="SourceSansPro-Regular.otf"
+"新細明體"="SourceSansPro-Regular.otf"
